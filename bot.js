@@ -20,7 +20,7 @@ for(const file of commandsFile) {
 	client.commands.set(command.name, command);
 }
 
-client.on('ready', () => {
+client.once('ready', () => {
     console.log(`${client.user.tag} 봇에 로그인 했습니다`);
 });
 
